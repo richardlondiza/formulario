@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script class="1">
+
+        function imprimir(frase) {
+          
+                 document.write(frase)
+                 saltarlinea();
+        
+               }
+        
+         function saltarlinea() {
+        
+                 document.write("<br>");
+                 document.write("<br>");
+                 document.write("<br>");
+        
+                }
+        
+        function calcularimc(peso,altura) {
+                         
+                return ( imc = peso / (altura * altura));
+        
+                }
+                 
+              nombre = prompt("Informe su Nombre")
+              pesoInformado = prompt(nombre + ", Informe su Peso")
+              alturaInformada = prompt(nombre + ", informe su Altura")
+        
+              imcCalculado = calcularimc(pesoInformado,alturaInformada);
+
+        
+            imprimir(nombre + " , El promedio de indice calculado es " + imcCalculado);
+
+
+
+            if(imcCalculado < 18.5) {
+
+                imprimir(nombre + "Usted sufre de insuficiencia ponderal: " + imcCalculado);
+            
+            }
+
+
+            if(imcCalculado >= 18.5) {
+
+                if(imcCalculado < 25){
+
+                    imprimir(nombre + "usted posee un indice normal imc: " + imcCalculado);
+
+                }
+
+            }
+
+
+            if(imcCalculado >= 25) {
+
+                if(imcCalculado < 30){
+
+                    imprimir(nombre + " Usted subre de sobrepeso: " + imcCalculado);
+
+                }
+            
+            }
+            
+
+            if(imcCalculado >= 30) {
+            
+            imprimir(nombre + " Usted posee obesidad: " + imcCalculado);
+
+            }
+               
+               </script>
+</body>
+</html>

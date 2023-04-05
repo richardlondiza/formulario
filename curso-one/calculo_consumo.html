@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h3>¿Alcohol o gasolina?</h3>
+
+    <script>
+      var tanque = 40;
+
+      var kilometros = 480;
+      var kilometrosPorLitro = kilometros / tanque;
+
+      var kilometros = 300;
+      var kilometrosPorLitro = kilometros / tanque;
+
+      document.write(
+        "la eficiencia del carro es de " +
+          kilometrosPorLitro +
+          " " +
+          "Litros por kilometros"
+      );
+
+      document.write("<br>");
+
+      document.write(
+        "la eficiencia del carro es de " +
+          kilometrosPorLitro +
+          " " +
+          "Litros por kilometros"
+      );
+    </script>
+
+    <script>
+      function imprimir(frase) {
+        document.write(frase);
+        saltarlinea();
+      }
+
+      function saltarlinea() {
+        document.write("<br>");
+        document.write("<br>");
+        document.write("<br>");
+        document.write("<hr>");
+        document.write("<br>");
+        document.write("<br>");
+      }
+
+      var año = 2023;
+      imprimir("edades de familiares");
+
+      imprimir(" Mi edad es " + (año - 1991) + " años ");
+      imprimir(" La edade de mi esposa " + (año - 1996) + " años ");
+      imprimir(" La edade de mi hija edad es " + (año - 2018) + " años ");
+    </script>
+
+    <h2>imc.( Indice de masa muscular)</h2>
+
+    <script>
+      function imprimir(frase) {
+        document.write(frase);
+        saltarlinea();
+      }
+
+      function saltarlinea() {
+        document.write("<br>");
+        document.write("<br>");
+        document.write("<br>");
+        document.write("<hr>");
+        document.write("<br>");
+        document.write("<br>");
+      }
+
+      function calcularimc(peso, altura) {
+        imc = peso / (altura * altura);
+        return imc;
+      }
+
+      document.write(" Richrard ");
+
+      var peso = 100;
+      var altura = 1.65;
+      imc = calcularimc(peso, altura);
+      imprimir(" El indice corporar es: " + imc);
+
+      
+      document.write("Daiana");
+
+        calcularimc(71,1.50);
+        imprimir(" El indice corporar de daiana es: " + imc);
+
+
+      document.write("Charlotte");
+
+        calcularimc(20,1.00)
+        imprimir(" El indice corporar charlotte es: " + imc);
+      
+        
+        
+        function calcularimc(peso, altura) {
+        imc = peso / (altura * altura);
+        imprimir("El indice corporar de carlos es: " + imc);     
+     }
+
+        calcularimc(70,1.70)
+
+
+
+        function calcularimc(peso,altura,nombre) {
+        imc = peso / (altura * altura);
+        imprimir("El indice corporar de " + nombre + " es " + imc);     
+     }
+
+        calcularimc(100,1.65,"Richard");
+        calcularimc(90,1.55,"Daiana");
+        calcularimc(20,1.00,"Charlotte");
+    
+    
+    </script>
+
+
+
+
+  </body>
+</html>

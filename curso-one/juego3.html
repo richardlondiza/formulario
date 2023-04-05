@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1> juego level2</h1>
+    <script> // MISMO GUEGO PERO CON EL NUMERO PENSADO ALEATORIO
+
+        function imprimir(frase) {
+        
+            document.write(frase)
+            saltarlinea();
+        
+        }
+
+    
+        function saltarlinea() {
+
+            document.write("<br>");
+            document.write("<br>");
+            document.write("<br>");
+
+        }
+
+        var nombre = prompt("Nombre");
+        var numerPenzado = Math.round(Math.random()*10);
+        // math.round, ES PARA QUE SEA UN NUMERO NO TEXTO Y 
+        // math.random, ES PARA QUE SEA UN NUMERO ALEATORIO por defecto del 0 al 1 
+        //(hay que multiplicarlo por las veces que deceis el numero deceado < Math.random()*10 o 2 o 3 etc. >
+        var numerlanzado = parseInt(prompt("ingrese un numero de 0-10"))
+
+
+
+        if(numerPenzado == numerlanzado ){
+
+           imprimir(nombre + " usted adivinado el numero felicidades");
+
+        }
+
+
+         else{ // else es si no, es decir si pasa el "if imprime su contenino" si no imprime el contenido de else
+               // ya no es necesario poner otra condicion conmo en el ejemplo anterior
+               
+               imprimir(nombre + " usted no acerto, el numero pensado era: " + numerPenzado);
+        
+        }
+</script>
+</body>
+</html>

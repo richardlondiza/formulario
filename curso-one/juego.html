@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     
+    <h1>juego de adivinansa</h1>
+
+    <script>
+    
+         function imprimir(frase) {
+          
+          document.write(frase)
+          saltarlinea();
+ 
+        }
+
+ 
+        function saltarlinea() {
+ 
+          document.write("<br>");
+          document.write("<br>");
+          document.write("<br>");
+ 
+         }
+
+         var nombre = prompt("Nombre");
+         var numerPenzado = 5;
+         var numerlanzado = parseInt(prompt("ingrese un numero de 0-10"))
+
+
+
+         if(numerPenzado == numerlanzado ){
+
+            imprimir(nombre + " usted adivinado el numero felicidades");
+
+         }
+
+
+         if(numerPenzado != numerlanzado){
+
+                imprimir(nombre + " usted no acerto, el numero pensado era: " + numerPenzado);
+   
+         }
+
+    </script>
+
+
+ 
+</body>
+</html>

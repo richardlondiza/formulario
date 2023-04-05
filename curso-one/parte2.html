@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=
+    scr, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h2>calcular el puntaje de un equipo en una liga</h2>
+    <h3> usamos parseInt para que el valor que introdusca el cliente se tomo como valor numerico prompt solo da valor texto</h3> 
+
+    <script class="1">
+
+        function saltarlinea() {
+
+            document.write("<br>");
+            document.write("<br>");
+            document.write("<br>");
+
+        }
+
+        function imprimir(frase) {
+
+            document.write(frase);
+            saltarlinea();
+
+        }
+        
+
+        var victorias = parseInt(prompt("Informe la cantidad de victorias"));
+        var empates = parseInt(prompt("Informe la cantidad de empates"));
+
+        var  puntosTotales = victorias * 3 + empates; // Podriamos poner parentesis() pero cuando hay una muldiplicacion antes que una suma tomo como prioridad la multiplicacion 
+
+        imprimir("La cantidad de puntos de tu equipo es: " + puntosTotales);
+
+
+
+
+    </script>
+
+
+    <script class="2">
+
+        function saltarlinea() {
+
+            document.write("<br>");
+            document.write("<br>");
+            document.write("<br>");
+
+        }
+
+        function imprimir(frase) {
+
+            document.write(frase);
+            saltarlinea();
+
+        }
+        
+        // En este caso estamos trabajando con condicionales para seber si le fue mejor o peor que el año pasado
+
+        var victorias = parseInt(prompt("Informe la cantidad de victorias"));
+        var empates = parseInt(prompt("Informe la cantidad de empates"));
+
+        var  puntosTotales = (victorias * 3) + empates; // Podriamos poner parentesis() pero cuando hay una muldiplicacion antes que una suma tomo como prioridad la multiplicacion 
+
+        imprimir("La cantidad de puntos de tu equipo es: " + puntosTotales);
+
+        if(puntosTotales > 28) {
+
+            imprimir("El equipo esta mejor que el año pasado: " + puntosTotales);
+        }
+
+        
+        if(puntosTotales < 28) {
+
+            imprimir("El equipo esta peor que el año pasado: " + puntosTotales);
+        }
+    
+        
+
+        if(puntosTotales == 28) {
+
+            imprimir("El equipo esta igual que el año pasado: " + puntosTotales);
+
+        }
+
+       
+
+    </script>
+</body>
+</html>

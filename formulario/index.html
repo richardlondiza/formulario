@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Formulario</h1>
+    <div>
+      <form action="">
+        <label for="nombre">Nombre:</label>
+        <input
+          type="text"
+          id="nombre"
+          placeholder="Nombre"
+          required
+        /><br /><br />
+
+        <label for="apellido">Apellido</label>
+        <input
+          type="text"
+          id="apellido"
+          placeholder="Apellido"
+          required
+        /><br /><br />
+
+        <label for="correo">Correo</label>
+        <input
+          type="email"
+          name="correo"
+          id="correo"
+          placeholder="correo"
+          required
+        /><br /><br />
+
+        <label for="contraseña">Contraseña</label>
+        <input
+          type="password"
+          name="contraseña"
+          id="contraseña"
+          placeholder="contraseña"
+        /><br /><br />
+
+        <label for="data">Fecha:</label>
+        <input type="date" name="data" id="data" /><br /><br />
+
+        <label for="seleccionar">P ais de origen:</label>
+        <input type="checkbox" name="seleccionar" id="seleccionar" />
+        <i>Argentina</i>
+        <input type="checkbox" name="seleccionar" id="seleccionar" />
+        <i>Venezuela</i>
+        <input type="checkbox" name="seleccionar" id="seleccionar" />
+        <i>Otro</i><br /><br />
+
+        <label for="sujerencia">Sujerencia:</label>
+        <textarea
+          name="sujerencia"
+          id="sujerencia"
+          cols="30"
+          rows="10"
+          placeholder="Sujerencia"
+        ></textarea
+        ><br /><br />
+
+        <label for="documento">Archivo:</label>
+        <input type="file" name="documento" id="documento><br /><br />
+
+        <input type="submit" value="ENVIAR" />
+      </form>
+    </div>
+  </body>
+</html>

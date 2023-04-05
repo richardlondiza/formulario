@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+     <h2>calculo de promedio</h2>
+
+    <script class="1">
+
+      function imprimir(frase) {
+         document.write(frase)
+         saltarlinea();
+       }
+
+       function saltarlinea() {
+
+         document.write("<br>");
+         document.write("<br>");
+         document.write("<br>");
+
+        }
+
+
+         function calcularimc(peso1,altura1,nombre1,peso2,altura2,nombre2,peso3,altura3,nombre3) {
+         imc1 = peso1 / (altura1 * altura1);
+         imc2 = peso2 / (altura2 * altura2);
+         imc3 = peso2 / (altura3 * altura3);
+
+         imprimir("El promedio de indice calculado  de " + nombre1 + " , " + nombre2 + " y " + nombre3 + " es: " + (imc1+imc2+imc3)/3);
+         }
+
+         calcularimc(100,1.65,"Richard",90,1.55,"Daiana",20,1.00,"Charlotte"); //esto lo puedp replicar cuntas veces quiera y con los datos que sea 
+
+         
+    </script>
+
+    <script class="2">
+       // cuando quiero que me retorne un valor 
+
+       function imprimir(frase) {
+         document.write(frase)
+         saltarlinea();
+       }
+
+       function saltarlinea() {
+
+         document.write("<br>");
+         document.write("<br>");
+         document.write("<br>");
+        }
+
+
+       function calcularimc(peso,altura) {
+         imc = peso / (altura * altura);
+         
+         return imc // tambien podemos colocarlo en parentecis "return(imc)".
+         
+
+         }
+
+
+        var imcRichard = calcularimc(100,1.65);
+        var imcDaiana = calcularimc(90,1.55);
+        imprimir("El promedio de indice calculado  de Richard y Daiana " + " es " + (imcRichard+imcDaiana)/2);
+    </script>
+
+<script class="3">
+
+
+function imprimir(frase) {
+         document.write(frase)
+         saltarlinea();
+       }
+
+ function saltarlinea() {
+
+         document.write("<br>");
+         document.write("<br>");
+         document.write("<br>");
+        }
+
+
+       function calcularimc(peso,altura) {
+        
+         
+         return ( imc = peso / (altura * altura));
+
+
+         }
+
+
+        imprimir("El promedio de indice calculado  de Richard y Daiana " + " es: " + (calcularimc(100,1.65)+calcularimc(90,1.55))/2);
+        </script>
+
+
+        <script class="4">
+
+function imprimir(frase) {
+  
+         document.write(frase)
+         saltarlinea();
+
+       }
+
+ function saltarlinea() {
+
+         document.write("<br>");
+         document.write("<br>");
+         document.write("<br>");
+
+        }
+
+function calcularimc(peso,altura) {
+                 
+        return ( imc = peso / (altura * altura));
+
+        }
+         
+      nombre = prompt("Informe su Nombre")
+      pesoInformado = prompt(nombre + ", Informe su Peso")
+      alturaInformada = prompt(nombre + ", informe su Altura")
+
+      imcCalculado = calcularimc(pesoInformado,alturaInformada);
+
+       imprimir(nombre + " , El promedio de indice calculado es " + imcCalculado);
+       
+       </script>
+        </script
+
+  </body>
+</html>
